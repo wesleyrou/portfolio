@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css"> 
 </head>
 <body>
-    <header>        
-        <section class="item">
+    <header>
+        <section class="item title">
             <h1>Wesley Rou</h1>            
         </section>
 
@@ -29,56 +29,59 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
-
             </nav>
         </section>
 
     </header>
     <main class="wrapper">        
-        <section class="group">
-            <section class="item profile-image">
-                <img src="images/profile.JPG" alt="Wesley Rou - Profile Photo">      
-            </section>     
+        <section class="group-row">            
 
         <!-- Introduction -->
             <section class="item" id="home">
-            <h2 id="#intro">Hello,</h2>
-            My name is Wesley Rou. I've lived in the Silicon Valley my entire life. I am an a student developer who has been working in theatre for the past decade. My hobbies include:
-            <ul>
+                <div>
+                    <h2 id="#intro">Hi,</h2>
+                    <h3>I'm Wes</h3>
+                </div>            
+            <!-- <ul>
                 <li>Video Games</li>
                 <li>Board Games</li>
                 <li>Anime</li>
                 <li>Manga</li>
             </ul>
-            <p>Please take a look at my website and feel free to <a href="#contact">Contact Me!</a></p>
+            <p>Please take a look at my website and feel free to <a href="#contact">Contact Me!</a></p> -->
+            </section>
+            <section class="item profile-image">
+                <img src="images/profile.JPG" alt="Wesley Rou - Profile Photo">      
             </section>
         </section>
-        <div class="gap-sm"></div>
-        <hr>
-        <div class="gap-sm"></div> 
+        <section class="item">I'm a Web Developer based in the Silicon Valley with a mind for problem solving and a passion for creative thinking.</section>
+        <hr>        
 
         <!-- About -->
-        <section>
-            <h2 id="about">About Me</h2>
+        <section class="item" id="about">
+            <h2 >About Me</h2>
 
             <p>For as long as I can remembered, I've always been a problem solver. Whether it's a puzzle, or a strategy optimization for a game I am playing. Thinking about some issue deeply was something I enjoyed devoting a  lot of attention to.</p>
 
             <p>As a student at <a href="http://thinkful.com">Thinkful</a>, I am looking forward to learning new ways to solve unique problems.</a>
             
-            <div class="img-container">
-                <img src="images/rubik.JPG" alt="tempphoto1">
+            <div class="about-me-container">
+                <div class="img-container">
+                    <img src="images/rubik.jpg" alt="tempphoto1">
+                </div>
+                <div class="img-container">
+                    <img src="images/light.jpg" alt="tempphoto2">
+                </div>
+                <div class="img-container">
+                    <img src="images/headphone.jpg" alt="tempphoto3">
+                </div>
             </div>
-            <div class="img-container">
-                <img src="images/light.JPG" alt="tempphoto2">
-            </div>
-            <div class="img-container">
-                <img src="images/headphone.JPG" alt="tempphoto3">
-            </div>
+            
         </section>
 
-        <div class="gap-sm"></div>
+        
         <hr>
-        <div class="gap-sm"></div>
+        
 
         <!--Projects -->
 
@@ -151,26 +154,29 @@
             </div>
             <div class="group">
                 <section class="item">
+                    <h3>Binuaral</h3>
                     <div class="img-container-project">
                         <img onclick = "openPhotoSwipe('binaural')" src="images/binaural-screenshots/binaural.png" alt="binaural splash">
                     </div>
-                    <div>Binaural generates binaural beats and audio visualizations to help users achieve altered states of consciousness.</div>
+                    <div class="description">Binaural generates binaural beats and audio visualizations to help users achieve altered states of consciousness.</div>
                     <div><a href="https://github.com/thinkful-ei-panda/binaural-client">Github Repo</a></div>
                     <div><a href="https://binaural-client.vercel.app/">Live App</a></div>
                 </section>
                 <section class="item">
+                    <h3>ID8</h3>
                     <div class="img-container-project">
                         <img onclick = "openPhotoSwipe('id8')" src="images/ID8-screenshots/homepage.PNG" alt="ID8 homepage">
                     </div>                    
-                    <div>Share project ideas with other users and get inspired for your next development project. Great resource newer developers to find ideas for small apps to add to their portfolios</div>
+                    <div class="description">Share project ideas with other users and get inspired for your next development project. Great resource newer developers to find ideas for small apps to add to their portfolios</div>
                     <div><a href="https://github.com/thinkful-ei-panda/idea-machine-client">Github Client Repo</a></div>
                     <div><a href="http://idea-machine.vercel.app">Live App</a></div>
                 </section>
                 <section class="item">
+                    <h3>scio</h3>
                     <div class="img-container-project">
                         <img onclick = "openPhotoSwipe('scio')" src="images/scio-screenshots/dashboard-page.png" alt="scio dashboard">
                     </div>
-                    <div>An app that helps users learn the translations of Latin abbreviations used in daily life using spaced repetition.</div>
+                    <div class="description">An app that helps users learn the translations of Latin abbreviations used in daily life using spaced repetition.</div>
                     <div><a href="https://github.com/thinkful-ei-panda/scio-app-client-miki-wesley">Github Client Repo</a></div>
                     <div><a href="https://scio-app.vercel.app/">Live App</a></div>
                 </section>
@@ -186,10 +192,8 @@
 
             
         </section>
-
-        <div class="gap-sm"></div>
-        <hr>
-        <div class="gap-sm"></div>
+        
+        <hr>        
         
         <!-- Contact -->
         <section class="group">          
@@ -266,15 +270,16 @@ A link to your email (optional) -->
         case 'id8':            
         items = [
     {
-        src: 'images/ID8-screenshots/followedideaspage.PNG',
-        w: 600,
-        h: 400
+        src: 'images/ID8-screenshots/homepage.PNG',
+        w: 1800,
+        h: 600
     },
     {
-        src: 'images/ID8-screenshots/homepage.PNG',
-        w: 1200,
-        h: 900
-    }
+        src: 'images/ID8-screenshots/followedideaspage.PNG',
+        w: 1570,
+        h: 570
+    },
+
     ];
         break;
         case 'scio':
