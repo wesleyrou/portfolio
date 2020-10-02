@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley Rou : Aspring Developer</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="node_modules\photoswipe\dist\photoswipe.css"> 
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+        In the folder of skin CSS file there are also:
+        - .png and .svg icons sprite, 
+        - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="node_modules\photoswipe\dist\default-skin/default-skin.css"> 
+</head>
+<body>
+    <header>        
+        <section class="item">
+            <h1>Wesley Rou</h1>            
+        </section>
+
+        <section class="item">
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+
+            </nav>
+        </section>
+
+    </header>
+    <main class="wrapper">        
+        <section class="group">
+            <section class="item profile-image">
+                <img src="images/profile.JPG" alt="Wesley Rou - Profile Photo">      
+            </section>     
+
+        <!-- Introduction -->
+            <section class="item" id="home">
+            <h2 id="#intro">Hello,</h2>
+            My name is Wesley Rou. I've lived in the Silicon Valley my entire life. I am an a student developer who has been working in theatre for the past decade. My hobbies include:
+            <ul>
+                <li>Video Games</li>
+                <li>Board Games</li>
+                <li>Anime</li>
+                <li>Manga</li>
+            </ul>
+            <p>Please take a look at my website and feel free to <a href="#contact">Contact Me!</a></p>
+            </section>
+        </section>
+        <div class="gap-sm"></div>
+        <hr>
+        <div class="gap-sm"></div> 
+
+        <!-- About -->
+        <section>
+            <h2 id="about">About Me</h2>
+
+            <p>For as long as I can remembered, I've always been a problem solver. Whether it's a puzzle, or a strategy optimization for a game I am playing. Thinking about some issue deeply was something I enjoyed devoting a  lot of attention to.</p>
+
+            <p>As a student at <a href="http://thinkful.com">Thinkful</a>, I am looking forward to learning new ways to solve unique problems.</a>
+            
+            <div class="img-container">
+                <img src="images/rubik.JPG" alt="tempphoto1">
+            </div>
+            <div class="img-container">
+                <img src="images/light.JPG" alt="tempphoto2">
+            </div>
+            <div class="img-container">
+                <img src="images/headphone.JPG" alt="tempphoto3">
+            </div>
+        </section>
+
+        <div class="gap-sm"></div>
+        <hr>
+        <div class="gap-sm"></div>
+
+        <!--Projects -->
+
+        <section>
+            <h2 id="projects">Projects</h2>
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                <!-- Background of PhotoSwipe. 
+                     It's a separate element as animating opacity is faster than rgba(). -->
+                <div class="pswp__bg"></div>
+            
+                <!-- Slides wrapper with overflow:hidden. -->
+                <div class="pswp__scroll-wrap">
+            
+                    <!-- Container that holds slides. 
+                        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                        Don't modify these 3 pswp__item elements, data is added later on. -->
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+            
+                    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                    <div class="pswp__ui pswp__ui--hidden">
+            
+                        <div class="pswp__top-bar">
+            
+                            <!--  Controls are self-explanatory. Order can be changed. -->
+            
+                            <div class="pswp__counter"></div>
+            
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+            
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            
+                            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                            <!-- element will get class pswp__preloader--active when preloader is running -->
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                  <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div> 
+                        </div>
+            
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+            
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+            
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+            </div>
+            <div class="group">
+                <section class="item">
+                    <div class="img-container-project">
+                        <img onclick = "openPhotoSwipe('binaural')" src="images/binaural-screenshots/binaural.png" alt="binaural splash">
+                    </div>
+                    <div>Binaural generates binaural beats and audio visualizations to help users achieve altered states of consciousness.</div>
+                    <div><a href="https://github.com/thinkful-ei-panda/binaural-client">Github Repo</a></div>
+                    <div><a href="https://binaural-client.vercel.app/">Live App</a></div>
+                </section>
+                <section class="item">
+                    <div class="img-container-project">
+                        <img onclick = "openPhotoSwipe('id8')" src="images/ID8-screenshots/homepage.PNG" alt="ID8 homepage">
+                    </div>                    
+                    <div>Share project ideas with other users and get inspired for your next development project. Great resource newer developers to find ideas for small apps to add to their portfolios</div>
+                    <div><a href="https://github.com/thinkful-ei-panda/idea-machine-client">Github Client Repo</a></div>
+                    <div><a href="http://idea-machine.vercel.app">Live App</a></div>
+                </section>
+                <section class="item">
+                    <div class="img-container-project">
+                        <img onclick = "openPhotoSwipe('scio')" src="images/scio-screenshots/dashboard-page.png" alt="scio dashboard">
+                    </div>
+                    <div>An app that helps users learn the translations of Latin abbreviations used in daily life using spaced repetition.</div>
+                    <div><a href="https://github.com/thinkful-ei-panda/scio-app-client-miki-wesley">Github Client Repo</a></div>
+                    <div><a href="https://scio-app.vercel.app/">Live App</a></div>
+                </section>
+            
+                
+                <!-- <section class="item">
+                    <img src="images/placeholder.png" alt="placeholder project 2">
+                    <h3>TCG Set Reviewer</h3>-project description
+                    <div><a href="">Github Repo</a></div>
+                    <div><a href="">Live App</a></div>
+                </section> -->       
+            </div>
+
+            
+        </section>
+
+        <div class="gap-sm"></div>
+        <hr>
+        <div class="gap-sm"></div>
+        
+        <!-- Contact -->
+        <section class="group">          
+            <div class='item'>
+                <legend><h2 id="contact">Contact Me</h2></legend>
+                <form action="https://formspree.io/xlepjaey" method="POST">
+                    <div>
+                        <label for="user-name">Name:</label>
+                        <input id="user-name" type="text" name="name">
+                    </div>
+                    <div>
+                        <label for="user-email">Email:</label>
+                        <input id="user-email" type="text" name="email">
+                    </div>
+                    <div>
+                        <label for="user-message">Message:</label>
+                        <textarea id="user-message" name="message"></textarea>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="item">
+                <div class="gap-sm"></div>
+                <p>I'd love to hear from you! Please feel free to contact or follow me:</p>
+                <div>
+                    <a href="https://linkedin.com/in/wesleyrou">LinkedIn</a>
+                </div>
+                <div>
+                    <a href="https://github.com/wesleyrou">GitHub</a>
+                </div>    
+                <div>
+                    <a href="mailto:wesleyrou@gmail.com">Email me</a>
+                </div>   
+
+              
+            </div>
+        </section>
+        </section>
+
+        <div class="gap-lg"></div>
+
+    </main>
+    <!-- HTML that is semantic and valid
+CSS that has been written by you without the use of templates
+Content that is clear and readable
+An "intro" section that contains the following content:
+Who you are
+Where you are located
+What makes you "special"
+An "about me" section that contains the following content:
+A description that demonstrates your passion for web development and your willingness to work with others
+A sentence or two that describes other interests you have outside of development
+A "contact" section that contains the following content:
+A link to your LinkedIn
+A link to your GitHub
+A link to your email (optional) -->
+
+<!-- Core JS file -->
+<script src="node_modules\photoswipe\dist\photoswipe.js"></script> 
+
+<!-- UI JS file -->
+<script src="node_modules\photoswipe\dist\photoswipe-ui-default.min.js"></script> 
+
+<script type="text/javascript">
+
+    var openPhotoSwipe = function(project) {
+
+        
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items
+    switch(project){
+        case 'id8':            
+        items = [
+    {
+        src: 'images/ID8-screenshots/followedideaspage.PNG',
+        w: 600,
+        h: 400
+    },
+    {
+        src: 'images/ID8-screenshots/homepage.PNG',
+        w: 1200,
+        h: 900
+    }
+    ];
+        break;
+        case 'scio':
+        items = [
+    {
+        src: 'images/scio-screenshots/dashboard-page.png',
+        w: 3840,
+        h: 1938
+    },
+    {
+        src: 'images/scio-screenshots/learning-correct-answer.png',
+        w: 3840,
+        h: 1938
+    },
+    {
+        src: 'images/scio-screenshots/learning-guess-page.png',
+        w: 3840,
+        h: 1938
+    },
+    {
+        src: 'images/scio-screenshots/learning-incorrect-answer.png',
+        w: 3840,
+        h: 1938
+    },
+    {
+        src: 'images/scio-screenshots/learning-incorrect-guess.png',
+        w: 3840,
+        h: 1938
+    },
+    {
+        src: 'images/scio-screenshots/login-page.png',
+        w: 3840,
+        h: 1938
+    },
+    {
+        src: 'images/scio-screenshots/sign-up-page.png',
+        w: 3840,
+        h: 1938
+    },
+    ];
+        break;
+        case 'binaural':
+        console.log('binaural')
+        items = [
+    {
+        src: 'images/binaural-screenshots/binaural.png',
+        w: 1920,
+        h: 1080
+    },
+    {
+        src: 'images/binaural-screenshots/binaural-branding.png',
+        w: 1920,
+        h: 1080
+    },
+    {
+        src: 'images/binaural-screenshots/binaural-screenshot-beat-player.png',
+        w: 1920,
+        h: 1080
+    },
+    {
+        src: 'images/binaural-screenshots/binaural-screenshot-home.png',
+        w: 1920,
+        h: 1080
+    },
+    {
+        src: 'images/binaural-screenshots/binaural-screenshot-sub.png',
+        w: 1920,
+        h: 1080
+    },
+    ];
+        break;
+        default:        
+        items = [
+    {
+        src: 'https://placekitten.com/600/400',
+        w: 600,
+        h: 400
+    },
+    {
+        src: 'https://placekitten.com/1200/900',
+        w: 1200,
+        h: 900
+    }
+    ];
+    }
+    
+    
+    // define options (if needed)
+    var options = {
+			 // history & focus options are disabled on CodePen        
+      	history: false,
+      	focus: false,
+
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+        
+    };
+    
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+};
+
+// openPhotoSwipe();
+
+// document.getElementById('img').onclick(ev) = openPhotoSwipe(ev);
+</script>
+</body>
+
+    
+</html>
+
