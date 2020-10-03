@@ -61,9 +61,11 @@
         <section class="item" id="about">
             <h2 >About Me</h2>
 
-            <p>For as long as I can remember, I've always been a problem solver. Whether it's a puzzle or a strategy optimization for a game I am playing, thinking deeply about something is something I enjoy devoting a lot of attention to. Being a developer allows me to do that.</p>
+            <p>For as long as I can remember, I've always been a problem solver. Whether it's a puzzle or a strategy optimization for a game I am playing, I find great enjoyment out of thinking deeply about something and devoting a lot of attention to it. Being a developer allows me to do that on a regular basis.</p>
 
-            <p>Outside of web development, I enjoy puzzles, board games, video games, movies, tv shows, theater, music, anime, manga, and karaoke.</p>
+            <p>Additionally from the last ten years of working in theatre, I have really come to love working collaboratively with a team. Creating something new and amazing with other people that each individual would be unable to make on their own is in my eyes a beautiful thing. Being able to work with other like minded developers is something that I always look forward to.</p>
+
+            <p>Outside of web development, I enjoy puzzles, board games, video games, movies, tv shows, theater, music, anime, manga, and karaoke. Spending time with friends to relax or catch up is the best way to spend a weekend.</p>
             
             <div class="about-me-container">
                 <div class="img-container">
@@ -198,21 +200,24 @@
         <!-- Contact -->
         <section class="group">          
             <div class='item'>
-                <legend><h2 id="contact">Contact Me</h2></legend>
+                <h2 id="contact">Contact Me</h2>
                 <form action="https://formspree.io/xlepjaey" method="POST">
-                    <div>
-                        <label for="user-name">Name:</label>
-                        <input id="user-name" type="text" name="name">
-                    </div>
-                    <div>
-                        <label for="user-email">Email:</label>
-                        <input id="user-email" type="text" name="email">
-                    </div>
-                    <div>
-                        <label for="user-message">Message:</label>
-                        <textarea id="user-message" name="message"></textarea>
-                        <button type="submit">Submit</button>
-                    </div>
+                    <legend hidden>Contact Form</legend>
+                    <fieldset>
+                        <div>
+                            <label for="user-name">Name:</label>
+                            <input id="user-name" type="text" name="name">
+                        </div>
+                        <div>
+                            <label for="user-email">Email:</label>
+                            <input id="user-email" type="text" name="email">
+                        </div>
+                        <div>
+                            <label for="user-message">Message:</label>
+                            <textarea id="user-message" name="message"></textarea>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </fieldset>                    
                 </form>
             </div>
             <div class="item">
@@ -226,11 +231,8 @@
                 </div>    
                 <div>
                     <a href="mailto:wesleyrou@gmail.com">Email me</a>
-                </div>   
-
-              
+                </div>              
             </div>
-        </section>
         </section>
 
         <div class="gap-lg"></div>
@@ -257,7 +259,7 @@ A link to your email (optional) -->
 <!-- UI JS file -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script> 
 
-<script type="text/javascript">
+<script>
 
     var openPhotoSwipe = function(project) {
 

@@ -49,6 +49,10 @@ h2, h3 {
   margin:auto;
 }
 
+.img-container-project:hover{
+  cursor: pointer;
+}
+
 .img-container-about-me{
   width:80%
 }
@@ -136,6 +140,9 @@ form textarea {
   padding-bottom: 10px;
 }
 
+fieldset {
+  border: none;
+}
 
 
 @media (min-width:680px){
