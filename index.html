@@ -43,16 +43,16 @@
                 <img src="images/profile.JPG" alt="Wesley Rou - Profile Photo">      
             </div>
         </section>
-        <section class="item">I'm a Web Developer based in the silicon valley with a mind for problem-solving and a passion for creative thinking.</section>
+        <p class="item">I'm a Web Developer based in the silicon valley with a mind for problem-solving and a passion for creative thinking.</p>
         <hr>        
 
         <!-- About -->
         <section class="item" id="about">
             <h2 >About Me</h2>
 
-            <p>For as long as I can remember, I've always been a problem solver. Whether it's a puzzle or a strategy optimization for a game I am playing, I find great enjoyment out of thinking deeply about something and devoting a lot of attention to it. Being a developer allows me to do that on a regular basis.</p>
+            <p>For as long as I can remember, I've always been a problem solver. Whether it's a puzzle or a strategy optimization for a game I am playing, I find great enjoyment out of thinking deeply about something and devoting a lot of attention to it. Being a developer allows me to do that regularly.</p>
 
-            <p>Additionally from the last ten years of working in theatre, I have really come to love working collaboratively with a team. Creating something new and amazing with other people that each individual would be unable to make on their own is in my eyes a beautiful thing. Being able to work with other like minded developers is something that I always look forward to.</p>
+            <p>Additionally from the last ten years of working in theatre, I have come to love working collaboratively with a team. Creating something new and amazing with other people that each individual would be unable to make on their own is in my eyes a beautiful thing. Being able to work with other like-minded developers is something that I always look forward to.</p>
 
             <p>Outside of web development, I enjoy puzzles, board games, video games, movies, tv shows, theater, music, anime, manga, and karaoke. Spending time with friends to relax or catch up is the best way to spend a weekend.</p>
             
@@ -149,7 +149,11 @@
                     <div class="img-container-project">
                         <img onclick = "openPhotoSwipe('binaural')" src="images/binaural-screenshots/binaural.png" alt="binaural splash">
                     </div>
-                    <div class="description">Binaural generates binaural beats and audio visualizations to help users achieve altered states of consciousness.</div>
+                    <div class="description">
+                        <p>Binaural generates binaural beats and audio visualizations to help users achieve altered states of consciousness.</p>
+                        <p>There are other apps that allow a user to relax to soothing sounds or use sound to get energized for the day, but none of them have a visual component. With this project, my team wanted to create an app that would use the power of binaural beats to stimulate brain waves while also adding a visual component that would simulate the waveforms of the beats.</p>
+                        <p>Tech: HTML5, CSS, React, Javascript, SineWaves.js, Web Audio API, Express, knex..js, PostgreSQL, Mocha</p>
+                    </div>
                     <div><a href="https://github.com/thinkful-ei-panda/binaural-client">Github Repo</a></div>
                     <div><a href="https://binaural-client.vercel.app/">Live App</a></div>
                 </section>
@@ -158,7 +162,11 @@
                     <div class="img-container-project">
                         <img onclick = "openPhotoSwipe('id8')" src="images/ID8-screenshots/homepage.PNG" alt="ID8 homepage">
                     </div>                    
-                    <div class="description">Share project ideas with other users and get inspired for your next development project. Great resource newer developers to find ideas for small apps to add to their portfolios</div>
+                    <div class="description">
+                        <p>Share project ideas with other users and get inspired for your next development project.</p>
+                        <p>ID8 was made with other developers in mind. It is especially intended to help newer developers find ideas for small apps to add to their portfolios</p>
+                        <p>Tech: HTML5, CSS, React, Javascript, Express, knex..js, PostgreSQL, Mocha</p>
+                    </div>                    
                     <div><a href="https://github.com/thinkful-ei-panda/idea-machine-client">Github Client Repo</a></div>
                     <div><a href="http://idea-machine.vercel.app">Live App</a></div>
                 </section>
@@ -167,7 +175,11 @@
                     <div class="img-container-project">
                         <img onclick = "openPhotoSwipe('scio')" src="images/scio-screenshots/dashboard-page.png" alt="scio dashboard">
                     </div>
-                    <div class="description">An app that helps users learn the translations of Latin abbreviations used in daily life using spaced repetition.</div>
+                    <div class="description">
+                        <p>An app that helps users learn the translations of Latin abbreviations used in daily life using spaced repetition.</p>
+                        <p>scio is a language learning app. It uses a spaced repetition algorithm to make phrases that the user is familiar with show up again less frequently.</p>
+                        <p>Tech: HTML5, CSS, React, Javascript, Express, knex..js, PostgreSQL, Cypress</p>
+                    </div>
                     <div><a href="https://github.com/thinkful-ei-panda/scio-app-client-miki-wesley">Github Client Repo</a></div>
                     <div><a href="https://scio-app.vercel.app/">Live App</a></div>
                 </section>
@@ -190,9 +202,9 @@
         <section class="group">          
             <div class='item'>
                 <h2 id="contact">Contact Me</h2>
-                <form action="https://formspree.io/xlepjaey" method="POST">
-                    <legend hidden>Contact Form</legend>
+                <form action="https://formspree.io/xlepjaey" method="POST">                    
                     <fieldset>
+                        <legend hidden>Contact Form</legend>
                         <div>
                             <label for="user-name">Name:</label>
                             <input id="user-name" type="text" name="name">
